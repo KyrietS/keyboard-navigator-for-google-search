@@ -210,8 +210,5 @@
       }
     ],
     "permissions": ["storage"],
-    "options_page": "options.html",
-    "host_permissions": [
-      "https://www.google.com/*"
-    ]
+    "options_page": "options.html"
   }
