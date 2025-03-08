@@ -210,5 +210,10 @@
       }
     ],
     "permissions": ["storage"],
-    "options_page": "options.html"
+    "options_page": "options.html",
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "keyboard-navigator-for-google-search@addons.mozilla.org"
+      }
+    }
   }
