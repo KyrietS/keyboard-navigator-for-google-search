@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Settings - Keyboard Navigator for Google Search</title>
+  </head>
+  <body>
+    <h1>Settings - Keyboard Navigator for Google Search&trade;</h1>
+    <form id="optionsForm">
+        <label for="keysForNextResult">Next result:</label>
+        <input type="text" id="keysForNextResult" name="keysForNextResult"><br><br>
+
+        <label for="keysForPreviousResult">Previous result:</label>
+        <input type="text" id="keysForPreviousResult" name="keysForPreviousResult"><br><br>
+
+        <label for="keysForGoogleSearch">Switch to Google Search:</label>
+        <input type="text" id="keysForGoogleSearch" name="keysForGoogleSearch"><br><br>
+
+        <label for="keysForGoogleImages">Switch to Google Images:</label>
+        <input type="text" id="keysForGoogleImages" name="keysForGoogleImages"><br><br>
+
+        <label for="keysForGoogleVideos">Switch to Google Videos:</label>
+        <input type="text" id="keysForGoogleVideos" name="keysForGoogleVideos"><br><br>
+
+        <label for="keysForGoogleMaps">Switch to Google Maps:</label>
+        <input type="text" id="keysForGoogleMaps" name="keysForGoogleMaps"><br><br>
+
+        <button type="button" id="reset">Reset to default</button>
+        <button type="submit" id="save">Save</button>
+    </form>
+    <script src="defaultSettings.js"></script>
+    <script src="settingsManager.js"></script>
+    <script src="options.js"></script>
+    <div id="status"></div>
+  </body>
+</html>
