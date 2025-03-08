@@ -24,7 +24,7 @@ Keyboard Navigator for Google Search™ is a browser extension that lets you to 
    - **Previous Result**: `Arrow Up`
    - **Open Result**: `Enter`
    - **Switch to All**: `A` or `W`
-   - **Swtich to Images**: `I` or `G`
+   - **Switch to Images**: `I` or `G`
    - **Switch to Videos**: `V`
    - **Switch to Maps**: `M`
 
