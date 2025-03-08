@@ -1,4 +1,8 @@
-# ![icon](icon.png?raw=true) Keyboard Navigator for Google Search™
+<p align="center">
+  <img src="https://github.com/KyrietS/keyboard-navigator-for-google-search/raw/master/icon.png?raw=true" />
+</p>
+
+# Keyboard Navigator for Google Search™
 
 ## Overview
 
