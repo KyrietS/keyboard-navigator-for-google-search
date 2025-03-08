@@ -4,6 +4,8 @@
 
 Keyboard Navigator for Google Search™ is a browser extension that lets you to navigate search results with your keyboard. You can open links, and switch between different Google services like Images, Videos, and Maps.
 
+![Showcase](docs/showcase.gif)
+
 ## Features
 
 - **Navigate Search Results**: Use arrow keys to move through search results.
