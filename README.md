@@ -1,4 +1,4 @@
-# Keyboard Navigator for Google Search™
+# ![icon](icon.png?raw=true) Keyboard Navigator for Google Search™
 
 ## Overview
 
