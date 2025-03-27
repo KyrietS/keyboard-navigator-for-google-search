@@ -10,6 +10,14 @@ Keyboard Navigator for Google Search™ is a browser extension that lets you to 
 
 ![Showcase](docs/showcase.gif)
 
+## Installation
+
+**Chrome Web Store**: [Keyboard Navigator for Google Search™](https://chromewebstore.google.com/detail/ndlmonkfnjfeglacjljmmnjbklkmdjpm)
+
+**Edge Add-ons**: [Keyboard Navigator for Google Search™](https://microsoftedge.microsoft.com/addons/detail/keyboard-navigator-for-go/klagoojgcjjnanjigcdiafcpigkjbhgf)
+
+**Firefox Add-ons**: [Keyboard Navigator for Google Search™](https://addons.mozilla.org/en-US/firefox/addon/keyboard-navigator-for-google/)
+
 ## Features
 
 - **Navigate Search Results**: Use arrow keys to move through search results.
