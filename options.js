@@ -3,6 +3,8 @@
 const saveOptions = async () => {
     const keysForNextResult = document.getElementById('keysForNextResult').value.split(',');
     const keysForPreviousResult = document.getElementById('keysForPreviousResult').value.split(',');
+    const keysForNextPage = document.getElementById('keysForNextPage').value.split(',');
+    const keysForPreviousPage = document.getElementById('keysForPreviousPage').value.split(',');
     const keysForGoogleSearch = document.getElementById('keysForGoogleSearch').value.split(',');
     const keysForGoogleImages = document.getElementById('keysForGoogleImages').value.split(',');
     const keysForGoogleVideos = document.getElementById('keysForGoogleVideos').value.split(',');
@@ -11,6 +13,8 @@ const saveOptions = async () => {
     const settings = {
         keysForNextResult,
         keysForPreviousResult,
+        keysForNextPage,
+        keysForPreviousPage,
         keysForGoogleSearch,
         keysForGoogleImages,
         keysForGoogleVideos,
@@ -36,6 +40,8 @@ const restoreOptions = async () => {
         const items = await getSettings(defaultSettings);
         document.getElementById('keysForNextResult').value = items.keysForNextResult.join(',');
         document.getElementById('keysForPreviousResult').value = items.keysForPreviousResult.join(',');
+        document.getElementById('keysForNextPage').value = items.keysForNextPage.join(',');
+        document.getElementById('keysForPreviousPage').value = items.keysForPreviousPage.join(',');
         document.getElementById('keysForGoogleSearch').value = items.keysForGoogleSearch.join(',');
         document.getElementById('keysForGoogleImages').value = items.keysForGoogleImages.join(',');
         document.getElementById('keysForGoogleVideos').value = items.keysForGoogleVideos.join(',');

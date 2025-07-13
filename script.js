@@ -61,6 +61,34 @@ function getQueryText() {
     return params.get("q");
 }
 
+function getPreviousAndNextPageLinks() {
+    const tds = document.querySelectorAll('div[role="navigation"] table td');
+    let prevAndNextIndex = [null, null];
+
+    try {
+        for (let index = 0; index < tds.length; index++) {
+            const td = tds[index];
+            if (td.textContent.trim().match(/^\d+$/) && !td.querySelector('a')) {
+                if (index > 0) {
+                    prevAndNextIndex[0] = tds[index - 1].querySelector('a');
+                }
+                prevAndNextIndex[1] = tds[index + 1].querySelector('a');
+                break;
+            }
+        }
+    } catch (error) {
+        console.error('Failed to get previous and next page links:', error);
+    }
+
+    return prevAndNextIndex;
+}
+
+function clickPageLink(pageLink) {
+    if (pageLink) {
+        pageLink.click();
+    }
+}
+
 (async function () {
     console.log("Keyboard Navigator for Google Search is running");
 
@@ -69,6 +97,7 @@ function getQueryText() {
     const context = {
         searchResults: getGoogleSearchResults(),
         selectedResultIndex: 0,
+        prevAndNextPageLinks: getPreviousAndNextPageLinks(),
     };
 
     try {
@@ -91,6 +120,15 @@ function getQueryText() {
                 if (selectResult(context.selectedResultIndex - 1, context)) {
                     event.preventDefault();
                 }
+            }
+
+            // Previous/Next page
+            else if (settings.keysForPreviousPage.includes(event.key)) {
+                event.preventDefault();
+                clickPageLink(context.prevAndNextPageLinks[0])
+            } else if (settings.keysForNextPage.includes(event.key)) {
+                event.preventDefault();
+                clickPageLink(context.prevAndNextPageLinks[1])
             }
 
             // Google Search
