@@ -28,8 +28,10 @@ Keyboard Navigator for Google Search™ is a browser extension that lets you to 
 
 1. Perform a Google Search as usual.
 2. Use the following default keyboard shortcuts to navigate:
-   - **Next Result**: `Arrow Down`
-   - **Previous Result**: `Arrow Up`
+   - **Next Result**: `Arrow Down` or `J`
+   - **Previous Result**: `Arrow Up` or `K`
+   - **Next page**: `ArrowRight` or `L`
+   - **Previous page**: `ArrowLeft` or `H`
    - **Open Result**: `Enter`
    - **Switch to All**: `A` or `W`
    - **Switch to Images**: `I` or `G`
