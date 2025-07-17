@@ -63,16 +63,16 @@ function getQueryText() {
 
 function getPreviousAndNextPageLinks() {
     const tds = document.querySelectorAll('div[role="navigation"] table td');
-    let prevAndNextIndex = [null, null];
+    let prevAndNextLinks = [null, null];
 
     try {
         for (let index = 0; index < tds.length; index++) {
             const td = tds[index];
             if (td.textContent.trim().match(/^\d+$/) && !td.querySelector('a')) {
                 if (index > 0) {
-                    prevAndNextIndex[0] = tds[index - 1].querySelector('a');
+                    prevAndNextLinks[0] = tds[index - 1].querySelector('a');
                 }
-                prevAndNextIndex[1] = tds[index + 1].querySelector('a');
+                prevAndNextLinks[1] = tds[index + 1].querySelector('a');
                 break;
             }
         }
@@ -80,7 +80,7 @@ function getPreviousAndNextPageLinks() {
         console.error('Failed to get previous and next page links:', error);
     }
 
-    return prevAndNextIndex;
+    return prevAndNextLinks;
 }
 
 function clickPageLink(pageLink) {
@@ -129,10 +129,10 @@ function clickPageLink(pageLink) {
             // Previous/Next page
             else if (settings.keysForPreviousPage.includes(event.key)) {
                 event.preventDefault();
-                clickPageLink(context.prevAndNextPageLinks[0])
+                clickPageLink(context.prevAndNextPageLinks[0]);
             } else if (settings.keysForNextPage.includes(event.key)) {
                 event.preventDefault();
-                clickPageLink(context.prevAndNextPageLinks[1])
+                clickPageLink(context.prevAndNextPageLinks[1]);
             }
 
             // Google Search
