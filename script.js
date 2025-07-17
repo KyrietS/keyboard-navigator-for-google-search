@@ -111,6 +111,10 @@ function clickPageLink(pageLink) {
             if (document.activeElement.tagName === "INPUT" || document.activeElement.tagName === "TEXTAREA") {
                 return;
             }
+            // check if modifier key is pressed
+            if (event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) {
+                return;
+            }
 
             if (settings.keysForNextResult.includes(event.key)) {
                 if (selectResult(context.selectedResultIndex + 1, context)) {
