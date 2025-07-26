@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Keyboard Navigator for Google Search™",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Navigate Google Search results using arrows and keyboard shortcuts.",
     "icons": {
       "16": "icon.png",
