@@ -56,8 +56,6 @@ const resetOptions = async () => {
     try {
         await saveSettings(defaultSettings);
         await restoreOptions();
-        document.getElementById('keysForNextResult').value = defaultSettings.keysForNextResult.join(',');
-        document.getElementById('keysForPreviousResult').value = defaultSettings.keysForPreviousResult.join(',');
         const status = document.getElementById('status');
         status.textContent = 'Options reset to default.';
         setTimeout(() => {
